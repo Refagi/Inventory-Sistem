@@ -90,40 +90,40 @@
 
 **1. Product Management**
 
-**- Add Product**: Users can add new products to the inventory.
-**- View All Products**: Users can see a list of all products in the inventory.
-**- View Products per User**: Users can see the list of products they have.
-**- Product Details**: Users can see product details including description, price, and stock availability.
-**- Edit Product**: Users can change existing product information.
+**- Add Product**: Users can add new products to the inventory.\
+**- View All Products**: Users can see a list of all products in the inventory.\
+**- View Products per User**: Users can see the list of products they have.\
+**- Product Details**: Users can see product details including description, price, and stock availability.\
+**- Edit Product**: Users can change existing product information.\
 **- Remove Product**: Users can remove products from the inventory.
 
 **2. Category Management**
 
-**- Add Category**: Users can create new categories to group products.
-**- View All Categories**: Users can view a list of all existing categories.
-**- Edit Category**: Users can change the name of the category.
+**- Add Category**: Users can create new categories to group products.\
+**- View All Categories**: Users can view a list of all existing categories.\
+**- Edit Category**: Users can change the name of the category.\
 **- Remove Categories**: Users can remove categories, and products associated with those categories should be managed or removed.
 
 **3. Order Management**
 
-**- Create an Order**: Users can place an order by selecting a product, specifying a quantity, and filling in customer information.
-**- View All Orders**: Users can view a list of all orders that have been made.
-**- View Orders per User**: Users can see orders they have placed.
-**- Order Details**: Users can view order details including purchased products, quantities, total prices, order dates, and customer details.
+**- Create an Order**: Users can place an order by selecting a product, specifying a quantity, and filling in customer information.\
+**- View All Orders**: Users can view a list of all orders that have been made.\
+**- View Orders per User**: Users can see orders they have placed.\
+**- Order Details**: Users can view order details including purchased products, quantities, total prices, order dates, and customer details.\
 **- Delete Orders**: Users can delete orders that have been completed or cancelled.
 
 **4. User Token Management and Authentication**
 
-**- User Registration**: Users can register and create accounts by filling in basic information.
-**- Login Users**: Users can log in to their account using email and password.
-**- User Authentication**: Users will be authenticated through tokens when using an API that requires authentication.
-**- Token Refresh**: Users can refresh their tokens to keep their sessions active.
+**- User Registration**: Users can register and create accounts by filling in basic information.\
+**- Login Users**: Users can log in to their account using email and password.\
+**- User Authentication**: Users will be authenticated through tokens when using an API that requires authentication.\
+**- Token Refresh**: Users can refresh their tokens to keep their sessions active.\
 **- Logout User**: Users can log out from their account.
 
-**5. Role Management**
+**5. Role Management**\
 There are several types of roles in this project:
 
-**- User**: This role can only use the product management feature (users with this role cannot use the Order API).
+**- User**: This role can only use the product management feature (users with this role cannot use the Order API).\
 **- Admin**: The Admin role can access all features.
 
 ## API Endpoints
