@@ -1,22 +1,22 @@
 {
-  "version": 2,
+  "version": 3,
   "builds": [
     {
       "src": "src/index.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "build": {
+          "env": {
+            "CUSTOM_KEY": "custom-value"
+          }
+        }
+      }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/src/index.js"
-    }
-  ],
-  "functions": {},
-  "hooks": [
-    {
-      "src": "src/index.js",
-      "command": "prisma generate"
     }
   ]
 }
