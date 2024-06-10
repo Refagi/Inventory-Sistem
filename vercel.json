@@ -4,12 +4,8 @@
     {
       "src": "src/index.js",
       "use": "@vercel/node",
-      "config": {
-        "build": {
-          "env": {
-            "CUSTOM_KEY": "custom-value"
-          }
-        }
+      "hooks": {
+        "build": "prisma generate"
       }
     }
   ],
