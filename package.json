@@ -11,6 +11,8 @@
     "node": "20.x"
   },
   "scripts": {
+    "postinstall": "prisma generate",
+    "build": "prisma generate && node src/index.js",
     "start": "pm2 start ecosystem.config.json --no-daemon",
     "dev": "cross-env NODE_ENV=development nodemon src/index.js",
     "lint": "eslint .",
@@ -21,9 +23,7 @@
     "test": "jest -i --colors --verbose --detectOpenHandles",
     "test:watch": "jest -i --watchAll",
     "coverage": "jest -i --coverage",
-    "coverage:coveralls": "jest -i --coverage --coverageReporters=text-lcov | coveralls",
-    "postinstall": "prisma generate",
-     "build": "prisma generate && node src/index.js"
+    "coverage:coveralls": "jest -i --coverage --coverageReporters=text-lcov | coveralls"
   },
   "keywords": [
     "node",
