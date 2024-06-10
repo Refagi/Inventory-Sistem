@@ -11,10 +11,8 @@ async function runCmd(command) {
     const { stdout, stderr } = await exec(command);
     console.log(stdout);
     console.log(stderr);
-  } catch {
-    (error) => {
-      console.log(error);
-    };
+  } catch (error) {
+    console.log(error);
   }
 }
 
@@ -77,12 +75,9 @@ async function setup() {
     console.log('Dependencies installed successfully.');
     console.log();
 
-    // Copy envornment variables
+    // Copy environment variables
     fs.copyFileSync(path.join(appPath, '.env.example'), path.join(appPath, '.env'));
     console.log('Environment files copied.');
-
-    // Delete .git folder
-    await runCmd('npx rimraf ./.git');
 
     // Remove extra files
     fs.unlinkSync(path.join(appPath, 'CHANGELOG.md'));
