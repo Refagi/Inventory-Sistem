@@ -22,7 +22,7 @@
     "test:watch": "jest -i --watchAll",
     "coverage": "jest -i --coverage",
     "coverage:coveralls": "jest -i --coverage --coverageReporters=text-lcov | coveralls",
-    "build": "prisma generate && tsc"
+    "build": "prisma generate && node src/index.js"
   },
   "keywords": [
     "node",
